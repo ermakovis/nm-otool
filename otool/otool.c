@@ -1,4 +1,4 @@
-#include "ft_otool.h"
+#include "otool.h"
 
 int		main(void)
 {

@@ -22,16 +22,18 @@ LIB_DIR			:=	./libft
 OBJ_DIR			:=	./obj
 INC_PATH		:=	./includes
 
-NM_SRC_FILES	:=	nm.c
+NM_SRC_FILES	:=	nm.c\
+					parse_elf.c\
+					misc.c
 
 OT_SRC_FILES	:=	otool.c
 
-NM_HEAD 		:=	ft_nm.h
+NM_HEAD 		:=	nm.h
 NM_INC			:=	$(INC_PATH)/nm.h
 NM_SRC			:=	$(addprefix $(NM_DIR), $(NM_SRC_FILES))
 NM_OBJ 			:=	$(addprefix $(OBJ_DIR)/, $(NM_SRC_FILES:.c=.o))
 
-OT_HEAD			:=	ft_otool.h
+OT_HEAD			:=	otool.h
 OT_INC			:=	$(INC_PATH)/otool.h
 OT_SRC			:=	$(addprefix $(OT_DIR), $(OT_SRC_FILES))
 OT_OBJ 			:=	$(addprefix $(OBJ_DIR)/, $(OT_SRC_FILES:.c=.o))
